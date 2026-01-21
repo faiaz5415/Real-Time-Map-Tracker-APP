@@ -129,7 +129,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Real-Time Tracker")),
+      appBar: AppBar(  backgroundColor: Colors.blue,
+          title: const Text("Real-Time Tracker", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
+
       body: currentLocation == null
           ? const Center(child: CircularProgressIndicator())
           : GoogleMap(
