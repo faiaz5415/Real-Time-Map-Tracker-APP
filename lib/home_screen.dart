@@ -130,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(  backgroundColor: Colors.blue,
-          title: const Text("Real-Time Tracker", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
+          title: const Text("Real-Time Location Tracker", style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
 
       body: currentLocation == null
           ? const Center(child: CircularProgressIndicator())
